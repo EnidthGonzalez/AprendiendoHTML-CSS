@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        /* 2. ferma de agregar estilos: SELECTOR POR ETIQUEETA --> a cada elemento de la pagina web yo le puedo entregar un selector
+         de css (identificacion de elementos x alguna de sus propiedades, la primera propiedad que yo puedo utilizar para identificar un elemento 
+         en la pagian web es por la etiqueta */
+         button{
+             /*propiedades a modificar en todos los button que tenga mi pagina*/
+             background-color: red;
+             color: white;
+
+         }
+    </style>
 </head>
 <body>
     <a href="./index.html">Regresar</a>
@@ -24,7 +35,8 @@
         <input type="checkbox"/>
         <input type="radio" />
         <input type="file">  <!-- este es para elegir un archivo -->
-        <button type="submit">Enviar Datos</button> <!-- capturar el formulario el submit envia la informacion-->
+        <button>Enviar Datos</button>     <!-- capturar el formulario el submit envia la informacion-->
+        <!--<button type="submit" style="color: white; background-color: red;">Enviar Datos</button>  (1. forma para agregar estilos: esto se llama estilos inline )-->
         <button type="reset">Reiniciar</button>
 
 </body>
