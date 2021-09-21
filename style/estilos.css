@@ -1,0 +1,72 @@
+p {
+    color: #1f1c1c;
+}
+h3{
+    color: #0e0429;
+}
+a{
+    background-color: #e790e7;
+}
+/*no recomendado los selectores id="", no es bueno utilizarlo */
+/* #parrafo3{  
+    color: aqua;
+} */
+/*trabajar con clases: define un estilo que yo pueda replicar tanatas veces sea necesario*/
+.textoGris{
+    color: grey;
+}
+.textoBrown{
+    color: brown;
+}
+.fondoRojo{
+    background-color: rgb(189, 144, 235);
+}
+.fondoCoral{
+    background-color: rgb(238, 157, 128);
+}
+.textoGrandeNegrita{
+    font-size: x-large ;
+    font-weight: bold;
+    font-style: oblique;
+    font-stretch: narrower;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;  /*sobreescribe el primer font*/
+}
+.imagenMediana{
+    height: 100px;
+
+}
+.parrafoAngosto{
+    width: 350px;
+    height: 500px;
+    
+}
+.contenedorMargen{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.contenedorDivsGrid{
+    border: 2px solid #094104; 
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 30% 30% 40%;  /*unidades x pixeles*/
+    margin: 20px;
+}
+.divTest {
+    border: 1px solid #e74820; 
+    height: 50px;   
+}
+.contenedorDivsFlex{
+    border: 2px solid green;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}

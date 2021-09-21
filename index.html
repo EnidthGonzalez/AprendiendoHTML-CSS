@@ -5,8 +5,10 @@
     <meta charset="UTF-8">   <!--2. los tacg o etiqueta <META: nos sirve para representar diferente informacion general de la pagina   CHARSET: es la propiedad y el valor es  UTF-8 > = todo es el set de caracteres para utilizar caracteres especiales segun el idioma y emogis  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">    <!-- meta con 2 propiedades , esta etiqueta lo que hace es:  compatibilidad con navegadores antiguos-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- esta etiqueta lo que hace es configurar la etiqueta al ancho de la pantalla VIEWPORT (por defecto) -->
+    <link rel="stylesheet" href="./style/estilos.css">  <!-- esta etiqueta me permite tener un archivo externo metido dentro del html y para esto se pone un href, y hay que decirle a ese link de que tipo es stylesheet y es donde va a quedar guardado todo lo q hagamos para estilos a esta pagina link para los diferntes tipos de links q se puedan agregar: https://www.w3schools.com/tags/tag_link.asp-->
     <title>Mi título</title>    <!-- 1. permite al usuario sepa donde esta -->
     <description> </description>  <!-- Para que los navegadores sepan que van a buscar  -->
+
 
 </head>
 
@@ -17,8 +19,8 @@
     <!--Etiquetas listas=  listas ordenadas  <ol> utiles para explicar un proceso y con <li>: agrega elementos y listas desordenadas  es cuando yo quiero que haya una seccion en subseseciones <ul> y tambien con <li> -->
         <h3>Esto es una lista ordenadas</h3>
         <ol>         
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
+            <li class="textoGris fondoRojo textoGrandeNegrita">Elemento 1</li>
+            <li class="textoBrown fondoCoral">Elemento 2</li>
             <li>Elemento 3</li>
             <li>Elemento 4</li>
             <li>Elemento 5</li>
@@ -33,7 +35,7 @@
 
         </ul>
         <!-- utilizarlo como ultimo recurso el div y lo utilizo para separar varias partes de una seccion-->
-        <div>hola esto es un div</div>
+        <div class="textoBrown textoGrandeNegrita">hola esto es un div</div>
 
     </header>           
     <!-- el main siempre tiene secciones -->
@@ -47,31 +49,76 @@
             <h5>Titulo 5</h5>
             <h6>Titulo 6</h6>
             <!-- Etiqueta ancle <a></a>importante y permite navegacion a traves de paginas web y puede ser links externos y links internos -->
-            <a href="https://www.google.com"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt=""></a>
+            <a  href="https://www.google.com">
+            <img  class = "imagenMediana" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt=""></a>
 
             <a href="./paginatest.html">Este es un link interno</a>
             <a href="./formulario.html">Este es un link al formulario</a>
 
             <article> ARTICULOS <!-- escribir texto largo debe tener varios parrafos -->
                 <h3>Parrafo 1</h3>
-                <p>PARRAFO. Este es el primer parrafo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam reiciendis dicta esse quisquam necessitatibus aliquid natus, nostrum!</p>
+                <p class="textoGris parrafoAngosto"> Este es el primer parrafo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam reiciendis dicta esse quisquam necessitatibus aliquid natus, nostrum!</p>
                 <h3>Parrafo 2</h3>
-                <p>PARRAFO. Este es el segundo parrafo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam reiciendis dicta esse quisquam necessitatibus aliquid natus, nostrum!</p>  
-                <h3>Parrafo 3</h3>             
-                <p>PARRAFO. Este es el tercer parrafo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam reiciendis dicta esse quisquam necessitatibus aliquid natus, nostrum!</p>
-                <span>para texto corto</span>  <!--me sirve para camabiarle estilos o cosas a texto que tenga aca dentro  -->
+                <p class="textoBrown"> Este es el segundo parrafo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam reiciendis dicta esse quisquam necessitatibus aliquid natus, nostrum!</p>   
+                <p class="textoGris"> Este es el segundo parrafo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam reiciendis dicta esse quisquam necessitatibus aliquid natus, nostrum!</p> 
+                <p class="textoBrown"> Este es el segundo parrafo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam reiciendis dicta esse quisquam necessitatibus aliquid natus, nostrum!</p>  
+                <h3>Parrafo 3</h3>  
+                         
+                <p id="parrafo3">(" No es recomendable trabajar con el identificador id ")Este es el tercer parrafo  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus possimus aliquam reiciendis dicta esse quisquam necessitatibus aliquid natus, nostrum!</p>
+                <span>Esto es para texto corto</span>  <!--me sirve para camabiarle estilos o cosas a texto que tenga aca dentro, texto de una sola linea o corto -->
                    
             </article>
             <!-- a la etiqueta imagen siempre tiene 2 propiedades src= sours como la fuente, la ruta de esa imagen  ./=> quiere decir pongalo en la misma carpeta media
             si por algun motivo la imagen se daño entonces se utiliza la  propiedad alt: que es una alternativa donde va como la descripcion de la foto, por si no se ve la imagen 
             se puede saber de que trata la foto y para las persona cieguitas-->
-            <img src="./media/pinguinos.jpg" alt="Foto de unos pinguinos" >
+            <img class="imagenMediana" src="./media/pinguinos.jpg" alt="Foto de unos pinguinos" >
             <!-- imagnes accediendo a la nube  links para fotos=> https://unsplash.com/s/photos/  y  https://www.pexels.com/es-es/-->
-            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+            <!-- <img  src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt=""> -->
            
         </section>
-        <section>SECCION 2</section>
-        <section>SECCION 3</section>
+        <section>
+             <!-- margin: se utiliza para separar un conteneddor de lo que esta por fuera de el ( y al visualizarlo en el navegador lo pone con un borde naranjado ) y el padin: se utilizapara separar el borde de un conteendor de los elemenetos 
+                q estan dentro (el navegador lo muestra con el borde verde)-->
+
+            <div class="contenedorMargen">
+                <div>Div1</div>
+                <div>Div2</div>
+                <div>Div3</div>
+            </div>
+            <div class="contenedorDivsGrid">
+              <!-- https://developer.mozilla.org/es/docs/Web/CSS/display -->
+                <div class="divTest">Div1</div>   
+                <div class="divTest">Div2</div>
+                <div class="divTest">Div3</div>
+                <div class="divTest">Div4</div>
+                <div class="divTest">Div5</div> 
+                <div class="divTest">Div6</div>
+                <div class="divTest">Div7</div>   
+                <div class="divTest">Div8</div>
+                <div class="divTest">Div9</div>
+                <div class="divTest">Div10</div>
+                <div class="divTest">Div11</div> 
+                <div class="divTest">Div12</div>
+                <!-- https://www.w3schools.com/cssref/css_units.asp -->
+            </div>
+
+            <div class="contenedorDivsFlex">
+                <div class="divTest">Div1</div>   
+                <div class="divTest">Div2</div>
+                <div class="divTest">Div3</div>
+                <div class="divTest">Div4</div>
+                <div class="divTest">Div5</div> 
+                <div class="divTest">Div6</div>
+                <div class="divTest">Div7</div>   
+                <div class="divTest">Div8</div>
+                <div class="divTest">Div9</div>
+                <div class="divTest">Div10</div>
+                <div class="divTest">Div11</div> 
+                <div class="divTest">Div12</div>
+            </div>
+            
+        </section>
+
     </main>
     <footer>es el footer (informacion general de la empresa, de contacto )</footer>       <!--  -->
 
